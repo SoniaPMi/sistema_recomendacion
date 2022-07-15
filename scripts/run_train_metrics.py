@@ -5,8 +5,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from models.model_handler import ModelHandler
 
-customers = pd.read_csv("/workspaces/new_bpp/data/customer_data.csv")
-trans = pd.read_csv("/workspaces/new_bpp/data/transactions_data.csv")
+customers = pd.read_csv("/workspaces/sistema_recomendacion/data/customer_data.csv")
+trans = pd.read_csv("/workspaces/sistema_recomendacion/data/transactions_data.csv")
 trans["Date"] = [
     datetime.datetime.strptime(date_, '%Y-%m-%d')
     for date_ in trans["Date"]
