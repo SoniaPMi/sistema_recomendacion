@@ -1,5 +1,5 @@
 # set base image (host OS)
-FROM mcr.microsoft.com/vscode/devcontainers/python:3.8
+FROM tensorflow/tensorflow
 
 COPY dockerfiles/requirements.txt /tmp/
 
