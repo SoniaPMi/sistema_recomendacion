@@ -1,6 +1,5 @@
 # set base image (host OS)
 FROM tensorflow/tensorflow
-
 COPY dockerfiles/requirements.txt /tmp/
 
 RUN set -ex; \
@@ -10,7 +9,7 @@ ENV PYTHONPATH "/workspaces/sistema_recomendacion/src"
 
 
 ARG USERNAME=research
-ARG USER_UID=777666
+ARG USER_UID=777609
 ARG USER_GID=$USER_UID
 
 # Create the user
